@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block head_css %}
+
+{% endblock head_css %}
 
 {% block content %}
-    <div class="container-fluid">
-  <h3>Tu jeszcze nic nie ma, ale będzie</h3>
-  <p>Tu też.</p>
+  {% load staticfiles %}
 
-</div>
+  <img src="{% static "fareway/bg.jpg" %}" alt="My image"/>
+
 {% endblock %}
