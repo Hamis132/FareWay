@@ -1,12 +1,69 @@
+
 {% extends 'base.html' %}
+{% load staticfiles %}
 {% block title %}Home{% endblock title %}
 {% block head_css %}
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+h1 {
+    font-size: 45px;
+}
+.bg {
 
+    /* The image used */
+    background-image: url("{{ STATIC_URL }}static/fareway/bg.jpg");
+    color:floralwhite;
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center-right {
+    position: absolute;
+    bottom: 100px;
+    right: 150px;
+    width: 400px;
+overflow: hidden;
+}
+
+
+</style>
 {% endblock head_css %}
 
 {% block content %}
-  {% load staticfiles %}
 
-  <img src="{% static "fareway/bg.jpg" %}" alt="My image"/>
+  <div class="bg">
+    <div class="center-right">
+ <h1>FareWay</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+
+    <div class="container">
+        <div class="row">
+        <br><br><br><br>
+        </div>
+        <div class="row justify-content-md-center ">
+            <div class="col-md-auto">
+               <h1>Wybierz co chcesz zobaczyć.</h1>
+            </div>
+        </div>
+        <div class="row">
+        <br><br>
+        </div>
+       <div class="row">
+          <div class="col-4"><img src="{% static 'fareway/356x280.svg' %}" class="img-thumbnail" alt="blank"><p>Atrakcja 2</p></div>
+          <div class="col-4"><img src="{% static 'fareway/356x280.svg' %}" class="img-thumbnail" alt="blank"><p>Atrakcja 2</p></div>
+          <div class="col-4"><img src="{% static 'fareway/356x280.svg' %}" class="img-thumbnail" alt="blank"><p>Atrakcja 2</p></div>
+        </div>
+        </div>
+    </div>
+
 
 {% endblock %}
