@@ -9,7 +9,7 @@
       <introspection-schemas>*:main</introspection-schemas>
     </data-source>
     <data-source name="db.sqlite3" uuid="743ce94a-4818-48a5-a74a-c5d3568193f4">
-      <database-info product="SQLite" version="3.16.1" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
+      <database-info product="SQLite" version="3.20.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.20.1.1" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <auth-required>false</auth-required>
