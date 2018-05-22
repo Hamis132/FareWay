@@ -8,12 +8,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
 {% block head_css %}
             {% block head_css_site %}
             {% endblock head_css_site %}
             {% block head_css_section %}{% endblock head_css_section %}
             {% block head_css_page %}{% endblock head_css_page %}
-        {% endblock head_css %}
+{% endblock head_css %}
 </head>
 <body>
 
@@ -42,5 +43,25 @@
 
 {% block content %}
     {% endblock %}
+<div class="space">
+    <br><br>
+</div>
+<!--<footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+    <div class="container text-center text-md-left">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="text-uppercase">FareWay</h5>
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="col-md-6">
+                <h5 class="text-uppercase">LINKS</h5>
+                <p>TA</p>
+            </div>
+        </div>
+        <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright: TA
+    </div>
+    </div>
+</footer>-->
 </body>
 </html>
