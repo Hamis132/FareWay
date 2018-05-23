@@ -19,7 +19,7 @@
       initial_lon = 23.162018;
 
   // Initial zoom level for the map.
-  var initial_zoom = 6;
+  var initial_zoom = 12;
 
   // Initial zoom level if input fields have a location.
   var initial_with_loc_zoom = 12;
