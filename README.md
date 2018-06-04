@@ -2,14 +2,14 @@
 
 ### TO DO ###<br />
 1. Strony<br />
-&nbspa.Login<br />
-&nbspb.Rejestracja<br />
-&nbspc.Atrakcje<br />
-&nbspd.Koszyk<br />
-&nbspe.Trasa<br />
+  a.Login<br />
+  b.Rejestracja<br />
+  c.Atrakcje<br />
+  d.Koszyk<br />
+  e.Trasa<br />
 2. Controllery<br />
-&nbspa. HomeView<br />
-&nbspb. TrasaView<br />
-&nbspc. Koszyk(?)<br />
+  a. HomeView<br />
+  b. TrasaView<br />
+  c. Koszyk(?)<br />
 3. Login<br />
 4. Rejestracja<br />
