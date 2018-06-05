@@ -29,7 +29,7 @@ class Attraction(models.Model):
         max_digits=9, decimal_places=6, null=True, blank=True)
     time = models.TimeField(blank=True)
     description = models.CharField(max_length=255)
-
+    image = models.ImageField(blank=True,null=True,upload_to="post_img")
     def __str__(self):
         return self.name
 

@@ -58,12 +58,11 @@ overflow: hidden;
         <br><br>
         </div>
        <div class="row">
-          <div class="col-4"><img src="{% static 'fareway/356x280.svg' %}" class="img-thumbnail" alt="blank"><p>Atrakcja 2</p></div>
-          <div class="col-4"><img src="{% static 'fareway/356x280.svg' %}" class="img-thumbnail" alt="blank"><p>Atrakcja 2</p></div>
-          <div class="col-4"><img src="{% static 'fareway/356x280.svg' %}" class="img-thumbnail" alt="blank"><p>Atrakcja 2</p></div>
+            {% for attraction in attractions %}
+          <div class="col-4"><img src="{{ attraction.image.url }}"><p>{{ attraction.name }}</p><p style="font-size:12px">{{ attraction.description }}</p></div>
+            {% endfor %}
         </div>
         </div>
     </div>
-
 
 {% endblock %}

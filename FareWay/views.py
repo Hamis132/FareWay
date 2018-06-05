@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from .models import Attraction
 
 def home(request):
-    return render(request,'home.html', {})
+    attractions = Attraction.objects.get_queryset()
+    return render(request,'home.html', {'attractions':attractions})

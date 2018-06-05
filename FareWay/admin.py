@@ -9,7 +9,7 @@ class AttractionAdmin(admin.ModelAdmin):
 
     fieldsets = (
         (None, {
-            'fields': ('name', 'price', 'category', 'latitude', 'longitude', 'time', 'description', )
+            'fields': ('name', 'price', 'category', 'latitude', 'longitude', 'time', 'description','image' )
         }),
     )
 
