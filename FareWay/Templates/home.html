@@ -59,7 +59,7 @@ overflow: hidden;
         </div>
        <div class="row">
             {% for attraction in attractions %}
-          <div class="col-4"><img src="{{ attraction.image.url }}"><p>{{ attraction.name }}</p><p style="font-size:12px">{{ attraction.description }}</p></div>
+                <div class="col-4"><a href="{% url 'attraction_details' pk=attraction.pk %}"><img src="{{ attraction.image.url }}"></a><p>{{ attraction.name }}</p><p style="font-size:12px">{{ attraction.description }}</p></div>
             {% endfor %}
         </div>
         </div>
