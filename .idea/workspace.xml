@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79cc4a51-e739-4304-b74d-6d249f25ebc8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FareWayProj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FareWayProj.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FareWay/Templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/FareWay/Templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FareWay/Templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/FareWay/Templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FareWay/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/FareWay/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FareWay/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/FareWay/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FareWay/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/FareWay/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FareWay/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/FareWay/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FareWayProj/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/FareWayProj/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FareWayProj/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/FareWayProj/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,8 +82,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FareWay/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+            <state relative-caret-position="187">
+              <caret line="11" column="78" lean-forward="true" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -114,20 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="location_picker.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FareWay/static/css/admin/location_picker.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FareWay/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="85">
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -135,11 +121,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="attraction_details.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FareWay/Templates/attraction_details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FareWay/Templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="61" column="146" selection-start-line="61" selection-start-column="146" selection-end-line="61" selection-end-column="146" />
+            <state relative-caret-position="241">
+              <caret line="61" column="92" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="92" />
               <folding>
                 <element signature="n#style#0;n#p#1;n#div#0;n#div#3;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -150,8 +145,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FareWay/Templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+            <state relative-caret-position="156">
+              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -173,8 +168,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/FareWayProj/models.py" />
-        <option value="$PROJECT_DIR$/FareWay/urls.py" />
-        <option value="$PROJECT_DIR$/FareWay/Templates/base.html" />
         <option value="$PROJECT_DIR$/FareWay/static/css/admin/location_picker.css" />
         <option value="$PROJECT_DIR$/FareWay/static/js/admin/location_picker.js" />
         <option value="$PROJECT_DIR$/FareWay/migrations/0006_auto_20180517_2249.py" />
@@ -183,7 +176,11 @@
         <option value="$PROJECT_DIR$/FareWay/admin.py" />
         <option value="$PROJECT_DIR$/FareWayProj/urls.py" />
         <option value="$PROJECT_DIR$/FareWay/views.py" />
+        <option value="$PROJECT_DIR$/FareWay/urls.py" />
+        <option value="$PROJECT_DIR$/FareWay/Templates/attraction_detail.html" />
         <option value="$PROJECT_DIR$/FareWay/Templates/home.html" />
+        <option value="$PROJECT_DIR$/FareWay/Templates/base.html" />
+        <option value="$PROJECT_DIR$/FareWay/Templates/attraction_details.html" />
       </list>
     </option>
   </component>
@@ -355,15 +352,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.3297062" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.511713" side_tool="true" visible="true" weight="0.3338633" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5146413" side_tool="true" visible="true" weight="0.3290938" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49840087" weight="0.3297062" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49840087" weight="0.3297062" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48609078" weight="0.3290938" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.48828697" visible="true" weight="0.3338633" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33674964" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48535872" visible="true" weight="0.3290938" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.48828697" weight="0.3338633" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33674964" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.44616205" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -445,13 +443,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FareWay/migrations/0002_auto_20180420_1500.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FareWay/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -810,16 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FareWay/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FareWay/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -865,17 +846,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FareWay/models.py">
+    <entry file="file://$PROJECT_DIR$/FareWay/Templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+        <state relative-caret-position="241">
+          <caret line="61" column="92" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="92" />
+          <folding>
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#3;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FareWay/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FareWay/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+        <state relative-caret-position="187">
+          <caret line="11" column="78" lean-forward="true" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -884,18 +878,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FareWay/Templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+        <state relative-caret-position="156">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FareWay/Templates/home.html">
+    <entry file="file://$PROJECT_DIR$/FareWay/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="61" column="146" selection-start-line="61" selection-start-column="146" selection-end-line="61" selection-end-column="146" />
-          <folding>
-            <element signature="n#style#0;n#p#1;n#div#0;n#div#3;n#div#1;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FareWay/Templates/attraction_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
         </state>
       </provider>
     </entry>
