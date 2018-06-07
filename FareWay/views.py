@@ -2,6 +2,7 @@
 from django.contrib.auth.forms import UserCreationForm
 from .models import Attraction
 from django.shortcuts import render, get_object_or_404, redirect
+from FareWay.forms import RegistrationForm
 
 
 def home(request):
@@ -15,14 +16,14 @@ def attraction_details(request,pk):
 
 def register(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = RegistrationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/register/success')
+            return redirect(registration_complete)
     else:
-        form = UserCreationForm()
-        args ={'form':form}
-    return render(request, "registration/register.html", args)
+        form = RegistrationForm()
+    return render(request, "registration/register.html", {'form': form})
+
 
 def registration_complete(request):
     return render(request, 'registration/registration_complete.html')
