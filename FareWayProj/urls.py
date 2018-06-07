@@ -22,6 +22,7 @@ from django.contrib.auth import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^registration/login', views.login, {'template_name': 'registration/login.html'}, name='login'),
+    url(r'^registration/logout', views.logout, {'next_page': '/'}, name='logout'),
     url(r'', include('FareWay.urls')),
 
 ]
