@@ -14,6 +14,11 @@ def attraction_details(request,pk):
     return render(request,'attraction_details.html',{'attraction':attraction})
 # a59c0d55e9c97e97198e45c992173a7003629899
 
+def attractions(request):
+    atracts=Attraction.objects.get_queryset()
+    return render(request,'attractions.html',{'attracts':atracts})
+
+
 def register(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
