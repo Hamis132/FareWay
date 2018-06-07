@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79cc4a51-e739-4304-b74d-6d249f25ebc8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FareWayProj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FareWayProj.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FareWay/Templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/FareWay/Templates/registration/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FareWay/Templates/registration/registration_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/FareWay/Templates/registration/registration_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FareWay/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/FareWay/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,11 +56,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FareWay/Templates/registration/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="14" />
+            <state relative-caret-position="102">
+              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+              <folding>
+                <element signature="n#style#0;n#small#0;n#p#0;n#div#1;n#div#0;n#div#0;n#form#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#0;n#form#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration_complete.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="registration_complete.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FareWay/Templates/registration/registration_complete.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -130,8 +129,11 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FareWay/Templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="61" column="164" selection-start-line="61" selection-start-column="164" selection-end-line="61" selection-end-column="164" />
+            <state relative-caret-position="584">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,7 +150,7 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FareWay/Templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
+            <state relative-caret-position="486">
               <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
             </state>
           </provider>
@@ -187,8 +189,8 @@
         <option value="$PROJECT_DIR$/FareWay/Templates/attraction_details.html" />
         <option value="$PROJECT_DIR$/FareWay/forms.py" />
         <option value="$PROJECT_DIR$/FareWay/views.py" />
-        <option value="$PROJECT_DIR$/FareWay/Templates/registration/register.html" />
         <option value="$PROJECT_DIR$/FareWay/Templates/registration/registration_complete.html" />
+        <option value="$PROJECT_DIR$/FareWay/Templates/registration/register.html" />
       </list>
     </option>
   </component>
@@ -370,12 +372,12 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.3297062" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5168375" side_tool="true" visible="true" weight="0.3290938" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5139092" side_tool="true" visible="true" weight="0.3338633" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49840087" weight="0.3297062" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49840087" weight="0.3297062" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48316252" visible="true" weight="0.3290938" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.48682284" weight="0.3338633" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48316252" weight="0.3290938" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.48609078" visible="true" weight="0.3338633" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33674964" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.44616205" />
@@ -857,20 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FareWay/Templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="164" selection-start-line="61" selection-start-column="164" selection-end-line="61" selection-end-column="164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FareWay/Templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FareWay/Templates/attraction_details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -912,10 +900,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FareWay/Templates/registration/register.html">
+    <entry file="file://$PROJECT_DIR$/FareWay/Templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="486">
+          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FareWay/Templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -925,6 +923,17 @@
           <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding>
             <element signature="e#195#230#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FareWay/Templates/registration/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#small#0;n#p#0;n#div#1;n#div#0;n#div#0;n#form#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#0;n#form#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

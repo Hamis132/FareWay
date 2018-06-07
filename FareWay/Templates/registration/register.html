@@ -7,7 +7,31 @@
 {% csrf_token %}
 <form method="post" action=".">
   {% csrf_token %}
-  {{ form.as_p }}
-<button type="sumbit">Login</button>
+<div class="container">
+    <div class="col-md-">
+        <div class="row">
+            <h2>Zarejestruj się</h2><br><br><br>
+        </div>
+
+            {% for field in form %}
+            <p>
+                {{ field.label_tag }}
+                <br>
+                {{ field }}
+                    {% if field.help_text %}
+                    <small style="color:darkslategray">{{ field.help_text|safe }}</small>
+                    {% endif %}
+            {% for error in field.errors %}
+            <p style="color:crimson">{{ error }}</p>
+        {% endfor %}
+            </p>
+
+        {% endfor %}
+    <br><br>
+    <button type="sumbit">Zarejestruj</button>
+    </div>
+</div>
+
+
 </form>
 {% endblock %}
