@@ -32,10 +32,24 @@
     </li>
   </ul>
   <ul class="nav navbar-nav ml-auto">
+      {% if user.is_authenticated %}
+          <li class="nav-item ">
+      <a class="nav-link" href="{% url 'register' %}">Zarejestruj się</a>
+    </li>
       <p class="navbar-btn" style="margin-bottom: 0;">
-          <a href="{% url 'login' %}" class="btn btn-outline-light">Login</a>
+          <a href="{% url 'login' %}" class="btn btn-outline-light">Zaloguj</a>
+      </p>
+
+    </ul>
+          {% else %}
+           <li class="nav-item ">
+      <a class="nav-link" href="#">Witaj ziomeczku!</a>
+    </li>
+          <p class="navbar-btn" style="margin-bottom: 0;">
+          <a href="{% url 'login' %}" class="btn btn-outline-light">Wyloguj</a>
       </p>
     </ul>
+    {% endif %}
 </nav>
 <br>
 

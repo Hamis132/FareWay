@@ -11,20 +11,40 @@
     <div class="row">
         <div class="col-sm-auto">
           <h1>{{ attraction.name }}</h1>
+               <img src="{{ attraction.image.url }}">
         <p>{{ attraction.description }}</p>
             <p>{{ attraction.category }}</p>
             <p>Cena: {{ attraction.price }} zł</p>
-        </div>
-        <div class="col-sm-auto">
-            <img src="{{ attraction.image.url }}">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-auto">
             <h4>Dodaj do koszyka</h4>
         </div>
+        <div class="col-sm-auto">
+<div id="map" style="width:600px;height:600px;background:yellow"></div>
+
+
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location
+  var attract = {lat: {{ attraction.latitude }}, lng: {{ attraction.longitude }}};
+  // The map, centered
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 16, center: attract});
+  // The marker
+  var marker = new google.maps.Marker({position: attract, map: map});
+}
+    </script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO7E5tyhGvH0Eamlk3oiZ7nA5I6wgewCg&callback=initMap" ></script>
+        </div>
     </div>
 
 
+
     </div>
+
+
+
+
 {% endblock %}
