@@ -1,8 +1,8 @@
 # FareWay Project
 
 ### TO DO ###<br />
-1. Strony<br />
-  a.Login<br />
+1. Strony  
+  a.Login  
   b.Rejestracja<br />
   c.Atrakcje<br />
   d.Koszyk<br />
