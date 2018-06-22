@@ -10,14 +10,16 @@ def home(request):
     return render(request,'home.html', {'attractions':attractions})
 
 def attraction_details(request,pk):
-    attraction=get_object_or_404(Attraction,pk=pk)
+    attraction=get_object_or_404(Attraction, pk=pk)
     return render(request,'attraction_details.html',{'attraction':attraction})
 # a59c0d55e9c97e97198e45c992173a7003629899
 
 def attractions(request):
     atracts=Attraction.objects.get_queryset()
-    return render(request,'attractions.html',{'attracts':atracts})
+    return render(request,'attractions.html', {'attractions':atracts})
 
+def my_route(request):
+    return render(request,'my_route.html')
 
 def register(request):
     if request.method == 'POST':

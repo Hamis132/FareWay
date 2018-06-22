@@ -1,10 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}Home{% endblock title %}
+{% block head_css %}
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+h1 {
+    font-size: 45px;
+}
+.bg {
 
-</body>
-</html>
+    /* The image used */
+    background-image: url("{{ STATIC_URL }}static/fareway/bg.jpg");
+    color:floralwhite;
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center-right {
+    position: absolute;
+    bottom: 100px;
+    right: 150px;
+    width: 400px;
+overflow: hidden;
+}
+
+
+</style>
+{% endblock head_css %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+        <br><br><br><br>
+        </div>
+        <div class="row justify-content-md-center ">
+            <div class="col-md-auto">
+               <h1>Wybierz co chcesz zobaczyć.</h1>
+            </div>
+        </div>
+        <div class="row">
+        <br><br>
+        </div>
+       <div class="row">
+            {% for attraction in attractions %}
+                <div class="col-4"><a href="{% url 'attraction_details' pk=attraction.pk %}"><img src="{{ attraction.image.url }}"></a><h5>{{ attraction.name }}</h5><p style="font-size:12px">{{ attraction.description }}</p></div>
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+
+{% endblock %}

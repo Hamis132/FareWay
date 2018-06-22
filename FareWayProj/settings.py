@@ -28,11 +28,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+RECAPTCHA_PUBLIC_KEY = '6LeVJ2AUAAAAAGWlv1nIuAtUaXC9sRNs87IaJ_gM'
+RECAPTCHA_PRIVATE_KEY = '6LeVJ2AUAAAAAJmkAWggZ0yUEWZUU7RlafWsF00k'
+
+NOCAPTCHA = True
 
 # Application definition
 
 INSTALLED_APPS = [
     'FareWay.apps.FarewayConfig',
+    'captcha',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -125,3 +130,4 @@ STATIC_URL = '/static/'
 GOOGLE_MAPS_API_KEY = 'AIzaSyBO7E5tyhGvH0Eamlk3oiZ7nA5I6wgewCg'
 
 LOGIN_REDIRECT_URL = 'home'
+
