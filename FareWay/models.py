@@ -26,12 +26,12 @@ class Attraction(models.Model):
         return self.name
 
 
-class Trip(models.Model):
-    user = models.ForeignKey(User, default=0, on_delete=models.CASCADE)
-    trip_name = models.CharField(max_length=50, default='NazwaTrasy')
-    attraction = models.ManyToManyField(Attraction, related_name='attraction')
+class Route(models.Model):
+    user = models.ForeignKey(User, blank=True, null=True, on_delete=models.CASCADE)
+    route_name = models.CharField(max_length=30)
+    attractions = models.ManyToManyField(Attraction, related_name='attractions')
     start = models.ForeignKey(Attraction, related_name='start', default=None, blank=True, null=True, on_delete=models.CASCADE)
     end = models.ForeignKey(Attraction, related_name='end', default=None, blank=True, null=True, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.trip_name
+        return self.route_name

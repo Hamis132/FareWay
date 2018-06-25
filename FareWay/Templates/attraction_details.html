@@ -2,7 +2,8 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block title %}Details{% endblock title %}
-
+  {% block head %}
+    {% endblock head %}
 {% block content %}
     <div>
     <br><br><br>
@@ -36,7 +37,7 @@ function initMap() {
 }
     </script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO7E5tyhGvH0Eamlk3oiZ7nA5I6wgewCg&callback=initMap" ></script>
+
         </div>
     </div>
 

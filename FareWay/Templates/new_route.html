@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div class="container">
+    <div class="container">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="jumbotron" style="padding: 35px;">
+                <div class="row">
+                    <div class="panel-heading text-center text-primary" style="font-size: 200%;">
+                        Lista proponowanych tras:
+                    </div>
+                    <div class="table-responsive" draggable="true">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Nazwa trasy</th>
+                                    <th>Start trasy</th>
+                                    <th>Koniec trasy</th>
+                                    <th>Atrakcje</th>
+                                    <th>Edytuj</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for route in sample_routes %}
+                                    <tr>
+                                        <td>{{ route }}</td>
+                                        <td>{{ route.start }}</td>
+                                        <td>{{ route.end }}</td>
+                                        <td>{% for attraction in route.attractions.all %}
+                                            <li>{{ attraction }}</li>
+                                        {% endfor %}</td>
+                                        <td>
+                                            <a href="{% url 'route_config' route.id %}"
+                                               class="btn btn-info btn-sm">
+                                                <span class="glyphicon glyphicon-pencil"></span> Edytuj
+                                            </a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        <a href="{% url 'route_config' 'empty' %}"
+                           class="btn btn-block btn-success" draggable="true">Pusta trasa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+{#    <div class="container">#}
+{#        <div class="container">#}
+{#            <div class="col-md-1"></div>#}
+{#            <div class="col-md-10">#}
+{#                <div class="jumbotron" style="padding:20px;">#}
+{#                    <div class="row">#}
+{#                        <ul>#}
+{#                            {% for route in sample_routes %}#}
+{#                                <li>#}
+{#                                    <b>Name: </b>{{ route }}#}
+{#                                    <ul>#}
+{#                                        <li><b>Start: </b>{{ route.start }}</li>#}
+{#                                        <li><b>End: </b>{{ route.end }}</li>#}
+{#                                        <li>#}
+{#                                            <b>Attractions: </b>#}
+{#                                            <ul>#}
+{#                                                {% for attraction in route.attractions.all %}#}
+{#                                                    <li>{{ attraction }}</li>#}
+{#                                                {% endfor %}#}
+{#                                            </ul>#}
+{#                                        </li>#}
+{#                                        <a href="{% url 'mainapp:route_config' route.id %}">Create</a>#}
+{#                                    </ul>#}
+{#                                </li>#}
+{#                            {% endfor %}#}
+{#                            <li><a href="{% url 'mainapp:route_config' 'empty' %}">Empty route</a></li>#}
+{#                        </ul>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{% endblock %}

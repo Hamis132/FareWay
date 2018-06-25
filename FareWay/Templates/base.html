@@ -1,17 +1,23 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% block head %}
+    {% endblock head %}
   <title>{% block title %}FareWay{% endblock title %}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO7E5tyhGvH0Eamlk3oiZ7nA5I6wgewCg" ></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
+
 {% block head_css %}
-            {% block head_css_site %}
-            {% endblock head_css_site %}
+
             {% block head_css_section %}{% endblock head_css_section %}
             {% block head_css_page %}{% endblock head_css_page %}
 {% endblock head_css %}
@@ -22,10 +28,10 @@
  <a class="navbar-brand" href="{% url 'home' %}">FareWay</a>
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#">Atrakcje</a>
+      <a class="nav-link" href="{% url 'new_route' %}">Atrakcje</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Twoja Trasa</a>
+      <a class="nav-link" href="{% url 'routes' %}">Twoja Trasa</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Koszyk</a>
@@ -75,5 +81,8 @@
     </div>
     </div>
 </footer>
+<script type="text/javascript" src="{% static 'js/map.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+
 </body>
 </html>

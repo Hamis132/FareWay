@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Attraction, Category
+from .models import Attraction, Category,Route
 from django.conf import settings
 
 
@@ -26,3 +26,4 @@ class AttractionAdmin(admin.ModelAdmin):
 
 admin.site.register(Attraction, AttractionAdmin)
 admin.site.register(Category)
+admin.site.register(Route)

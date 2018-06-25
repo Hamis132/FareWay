@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <script type="text/javascript">
+        var ROUTE = {{ route_pk | safe }};
+
+    </script>
+
+    <div class="container" ng-controller="GuideController as guide" ng-app="guide" ng-cloak>
+        <div class="container">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="jumbotron" style="padding:20px;">
+                    <div class="panel-heading text-center text-primary" style="font-size: 200%;">
+                        Wyznaczanie trasy
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="panel panel-primary" style="overflow-y: hidden;">
+                                <div class="panel-heading" style="font-size: 125%;">Mapa</div>
+                                <div class="panel-body" style="padding: 0px;">
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                        <div id="map" class="embed-responsive" style="width:500px;height:500px"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-primary">
+                                <div class="panel-heading" style="font-size: 125%;">Wszystkie atrakcje</div>
+                                <div class="panel-body" style="height: 200px; overflow-y: scroll; padding: 0px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item" ng-repeat="attraction in attractions">
+                                            {$attraction.fields.name $}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div ng-show="selectedAttraction">
+                                <div class="panel panel-primary" style="overflow-y: hidden;">
+                                    <div class="panel-heading" style="font-size: 125%;">Atrakcja</div>
+                                    <div class="panel-body" style="padding: 15px;">
+                                        <li>
+                                            <b>Nazwa atrakcji: </b>{$ selectedAttraction.fields.name $}
+                                        </li>
+                                        <li>
+                                            <b>Kategoria: </b>{$ selectedAttraction.fields.category $}
+                                        </li>
+                                        <li>
+                                            <b>Czas zwiedzania: </b>{$ selectedAttraction.fields.time $}
+                                        </li>
+                                        <li>
+                                            <b>Cena biletu: </b>{$ selectedAttraction.fields.price $} zł
+                                        </li>
+                                        <li>
+                                            <b>Opis: </b>
+                                        </li>
+                                        <div class="panel-body" style="height: 100px; overflow-y: scroll; padding: 0px;">
+                                            {$ selectedAttraction.fields.description $}
+                                        </div>
+                                        <button class="btn btn-danger" ng-show="inRoute(selectedAttraction)"
+                                                ng-click="removeFromRoute(selectedAttraction)" style="width: 100%">
+                                            Usuń z trasy
+                                        </button>
+                                        <button class="btn btn-primary" ng-hide="inRoute(selectedAttraction)"
+                                                ng-click="addToRoute(selectedAttraction)" style="width: 100%">
+                                            Dodaj do trasy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-primary" style="overflow-y: hidden;">
+                                <div class="panel-heading" style="font-size: 125%;">Całkowita trasa</div>
+                                <div class="panel-body" style="padding: 15px;">
+                                    <div class="form-group">
+                                        <label class="control-label">Nazwa trasy</label>
+                                        <input class="form-control" ng-model="routeName"
+                                               placeholder="Nazwa trasy" type="text">
+                                    </div>
+                                    <div ng-hide="routeEmpty()">
+                                        <h4>Lista atrakcji</h4>
+                                        <ul>
+                                            <li ng-repeat="attraction in route">
+                                                <b>{$ attraction.fields.name $}</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4 ng-show="routeEmpty()" style="color: red;">Brak atrakcji w trasie :(</h4>
+
+                                    <div class="form-group">
+                                        <label for="sel1">Punkt startowy:</label>
+                                        <select class="form-control" id="start" ng-model="start"
+                                                ng-change="updateMap()">
+                                            <option value="" selected>
+                                                Optymalny
+                                            </option>
+                                            <option ng-repeat="attraction in route" value="{$ attraction.pk $}">
+                                                {$ attraction.fields.name $}
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sel1">Punkt końcowy:</label>
+                                        <select class="form-control" id="end" ng-model="end" ng-change="updateMap()">
+                                            <option value="" selected>
+                                                Optymalny
+                                            </option>
+                                            <option ng-repeat="attraction in route" value="{$ attraction.pk $}">
+                                                {$ attraction.fields.name $}
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <h4>Czas zwiedzania: {$ getSightseeingTime() $}</h4>
+                                    <h4>Czas podróży: {$ getTravelTime() $}</h4>
+                                    <h4>Całkowity czas trasy: {$ getTotalTime() $}</h4>
+                                    <h4>Długość trasy: {$ getDistance() $} km</h4>
+                                    <input class="btn btn-primary"
+                                           style="clear: left; width: 100%; height: 32px; font-size: 13px;"
+                                           type="submit" name="commit" value="Zatwierdź trasę" ng-click="submitRoute()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+{% endblock %}
