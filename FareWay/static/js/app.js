@@ -124,7 +124,6 @@
                     var Numers = {lat: attraction.fields.latitude, lng: attraction.fields.longitude};
                     attraction.fields.position = Numers;
 
-
                     attraction.fields.marker = new google.maps.Marker({
                         position: myLatLng
                     });
@@ -133,6 +132,7 @@
                     })[0];
                     attraction.fields.category = category.fields.name;
                     attraction.fields.price = parseFloat(attraction.fields.price);
+
                 });
                 console.log(attractions, "ATTRACTIONS");//////////////////////
                 $scope.attractions = attractions;

@@ -41,13 +41,13 @@ def routes(request):
     return render(request, 'routes.html')
 
 
-
 class RoutesView(generic.ListView):
     template_name = 'routes.html'
     context_object_name = 'route_list'
 
     def get_queryset(self):
-        return Route.objects.filter(user=self.request.user.id)
+        if self.request.user.is_authenticated:
+            return Route.objects.filter(user=self.request.user.id)
 
 
 class SamleRoutesView(generic.ListView):
@@ -58,7 +58,7 @@ class SamleRoutesView(generic.ListView):
         return Route.objects.filter(user=None)
 
 
-@login_required()
+@login_required(login_url='login')
 def route_config(request, route_pk):
     js_object = {
         'name': "Nowa trasa",
